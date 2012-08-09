@@ -1,12 +1,12 @@
-# revision 21840
+# revision 26785
 # category Package
 # catalog-ctan /macros/latex/contrib/ulem
-# catalog-date 2011-03-26 12:43:28 +0100
+# catalog-date 2012-06-01 11:43:10 +0200
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-ulem
-Version:	20110326
-Release:	2
+Version:	20120601
+Release:	1
 Summary:	Package for underlining
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ulem
