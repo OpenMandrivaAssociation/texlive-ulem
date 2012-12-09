@@ -51,3 +51,20 @@ works with both Plain TeX and LaTeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120601-1
++ Revision: 813136
+- Update to latest release.
+
+* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110326-2
++ Revision: 757247
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110326-1
++ Revision: 719837
+- texlive-ulem
+- texlive-ulem
+- texlive-ulem
+
