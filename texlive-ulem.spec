@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-ulem
 Version:	20120601
-Release:	3
+Release:	4
 Summary:	Package for underlining
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ulem
