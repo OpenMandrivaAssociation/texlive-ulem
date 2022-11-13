@@ -1,18 +1,12 @@
-# revision 26785
-# category Package
-# catalog-ctan /macros/latex/contrib/ulem
-# catalog-date 2012-06-01 11:43:10 +0200
-# catalog-license other-free
-# catalog-version undef
 Name:		texlive-ulem
-Version:	20190228
+Version:	53365
 Release:	1
 Summary:	Package for underlining
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ulem
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ulem.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ulem.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ulem.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ulem.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ through words) and crossing out (/// over words). The package
 works with both Plain TeX and LaTeX.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -44,27 +38,10 @@ works with both Plain TeX and LaTeX.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120601-1
-+ Revision: 813136
-- Update to latest release.
-
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110326-2
-+ Revision: 757247
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110326-1
-+ Revision: 719837
-- texlive-ulem
-- texlive-ulem
-- texlive-ulem
-
