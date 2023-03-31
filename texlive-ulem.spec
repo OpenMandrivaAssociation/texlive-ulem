@@ -1,6 +1,6 @@
 Name:		texlive-ulem
 Version:	53365
-Release:	1
+Release:	2
 Summary:	Package for underlining
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ulem
