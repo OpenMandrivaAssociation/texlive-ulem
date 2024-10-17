@@ -3,7 +3,7 @@ Version:	53365
 Release:	2
 Summary:	Package for underlining
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ulem
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/ulem
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ulem.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ulem.doc.r%{version}.tar.xz
